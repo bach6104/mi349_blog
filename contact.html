@@ -18,9 +18,35 @@
     </header>
 
     <main>
-        <section>
-            <h2>Contact Bach Nguyen</h2>
-        </section>
+        <h2>Contact Form</h2>
+        <form action="#" method="post">
+            <!-- Name field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+
+            <!-- Email field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <!-- Reason for contact dropdown -->
+            <label for="reason">Reason for contact:</label>
+            <select id="reason" name="reason">
+                <option value="hi">Saying hi</option>
+                <option value="contractor">Looking for a contractor</option>
+                <option value="interview">Interested in an interview</option>
+            </select>
+            <br><br>
+
+            <!-- Comment textarea -->
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4" cols="50" required></textarea>
+            <br><br>
+
+            <!-- Submit button -->
+            <input type="submit" value="Submit">
+        </form>
     </main>
 </body>
 </html>

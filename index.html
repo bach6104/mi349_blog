@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Blog</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            border-top: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -58,9 +74,46 @@
                 <div class="text-content" style="width: 60%;">
                     <p>Ever since I was a kid, well after watching Gurren Lagann, I have been fascinated with the skies and space. I lived in Hanoi, which is the capital of Vietnam, so I did not have many chances to see the clear skies when it is dark. Bortle scale is a measure to see how light polluted your area is, with 9 as the largest which usually refers to cities and 1 is referred to perfect dark sky site, which is usually near mountains or national parks where there is no human/ artificial light.  To be able to see stars and space, I need to be in a low level Bortle zone, which is not the case in Hanoi. </p>
                     <p>Even though I was not able to see the clear skies at night, Hanoi was able to make up for me by providing one of the most stunning sunsets I can ever ask for. I have been fortunate enough to take some pictures of Hanoi’s sunset during my time in my hometown. After studying abroad here in Michigan State University, I have had the opportunity to take part in numerous astronomy events here such as going to the planetarium to watch a sky simulation in the dome or going to the MSU observatory to observe space and extraterrestrial objects through the telescope. </p>
+                    <!-- Table -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Celestial Object</th>
+                                <th>Distance from Earth (light-years)</th>
+                                <th>Visibility in Northern Hemisphere</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Andromeda Galaxy</td>
+                                <td>2.537 million</td>
+                                <td>Year-round</td>
+                            </tr>
+                            <tr>
+                                <td>Betelgeuse</td>
+                                <td>642.5</td>
+                                <td>Winter</td>
+                            </tr>
+                            <tr>
+                                <td>Alpha Centauri</td>
+                                <td>4.367</td>
+                                <td>Summer</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </article>
+        <!-- Newsletter Signup Form -->
+        <footer style="margin-top: 50px;">
+            <h2>Join my Newsletter</h2>
+            <form action="#" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <input type="submit" value="Subscribe">
+            </form>
+        </footer>
     </main>
 </body>
 </html>
