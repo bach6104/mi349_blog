@@ -196,7 +196,7 @@ form input, form textarea, form select {
 }
 #comment {
     width: 100%; /* Full width of the container */
-    max-width: 1600px; /* Restricts maximum width */
+    max-width: 1800px; /* Restricts maximum width */
     height: 100px; /* Initial height of the textarea */
     max-height: 1000px; /* Limits the vertical resizing */
     resize: vertical; /* Allows vertical resizing only */
