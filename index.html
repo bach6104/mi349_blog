@@ -3,117 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Blog</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            border: 1px solid black;
-            text-align: left;
-            padding: 8px;
-        }
-
-        th {
-            border-top: 1px solid black;
-        }
-    </style>
+    <title>Home - Bach Nguyen's Blog</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header with sticky navigation -->
     <header>
         <h1>Bach Nguyen's Blog</h1>
         <nav>
-            <ul style="list-style-type: none; text-align: center; padding: 0;">
-                <li style="display: inline; margin-right: 15px;"><a href="index.html">Home</a></li>
-                <li style="display: inline; margin-right: 15px;"><a href="about.html">About</a></li>
-                <li style="display: inline;"><a href="contact.html">Contact</a></li>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <!-- First Blog Post -->
-        <article>
-            <header>
-                <h2>Gurren Lagann: A Journey to the Universe</h2>
-                <p>
-                    <time datetime="2024-10-11">Published on 11th October 2024</time> by 
-                    <span>Bach Nguyen</span>
-                </p>
-            </header>
-            <div class="blog-content" style="display: flex; align-items: flex-start;">
-                <div class="image-container" style="width: 15%; margin-right: 20px;">
-                    <img src="images/gurren_lagann.jpg" alt="Gurren Lagann 1" style="width: 100%; margin-bottom: 10px;">
-                    <img src="images/gundam.jpg" alt="Gurren Lagann 2" style="width: 100%;">
+    <!-- Main content area with blog posts -->
+    <div class="main-content">
+        <section class="main-column">
+            <h2>Main Content</h2>
+            <!-- First Blog Post -->
+            <article class="blog-post">
+                <div class="image-container">
+                    <figure>
+                        <img src="images/gurren_lagann.jpg" alt="Gurren Lagann">
+                        <figcaption>A captivating scene from Gurren Lagann that inspires my love for space and robotics.</figcaption>
+                    </figure>
                 </div>
-                <div class="text-content" style="width: 60%;">
+                <div class="text-content">
+                    <h2>Gurren Lagann: A Journey to the Universe</h2>
                     <p>Gurren Lagann is an anime I watched in 2009, a year after it was released. This word would mean nothing in English to be honest, since it is a Japanese word. With Gurren meaning red and lagann is the face, together. Gurren is the name of a bigger mecha that the character Kamina controls while Lagann is the name of the smaller mecha that Simon controls. Together, they combine into Gurren Lagann. Gurren lagann is an anime about a boy trying to break through limits; after finding a buried robot under the ground, he has been together with the mecha to explore new horizons, make new friends and new enemies. From living underground to digging his way up to the surface and then to the edge of the universe.</p>
                     <p>I consider this to be one of my core memories and one of the things that define me. Gurren lagann is not just a movie about mecha and friendship powers, it has taught me various lessons about not giving up, dealing with the loss of your loved ones and even going to the end of the universe to find your loved ones again. Gurren Lagann has sparked my love for mecha/robots, astronomy and flying to the skies.</p>
                 </div>
-            </div>
-        </article>
+            </article>
 
-        <hr style="border: 1px solid #ccc; margin: 40px 0;">
+            <hr>
 
-        <!-- Second Blog Post -->
-        <article>
-            <header>
-                <h2>Astronomy and My Fascination with the Skies</h2>
-                <p>
-                    <time datetime="2024-10-12">Published on 12th October 2024</time> by 
-                    <span>Bach Nguyen</span>
-                </p>
-            </header>
-            <div class="blog-content" style="display: flex; align-items: flex-start;">
-                <div class="image-container" style="width: 15%; margin-right: 20px;">
-                    <img src="images/moon.jpeg" alt="Astronomy 1" style="width: 100%; margin-bottom: 10px;">
-                    <img src="images/sunset_plane.jpeg" alt="Astronomy 2" style="width: 100%;">
+            <!-- Second Blog Post -->
+            <article class="blog-post">
+                <div class="image-container">
+                    <figure>
+                        <img src="images/moon.jpeg" alt="Astronomy Image">
+                        <figcaption>A glimpse into my fascination with  astronomy and space observation.</figcaption>
+                    </figure>
                 </div>
-                <div class="text-content" style="width: 60%;">
+                <div class="text-content">
+                    <h2>Astronomy and My Fascination with the Skies</h2>
                     <p>Ever since I was a kid, well after watching Gurren Lagann, I have been fascinated with the skies and space. I lived in Hanoi, which is the capital of Vietnam, so I did not have many chances to see the clear skies when it is dark. Bortle scale is a measure to see how light polluted your area is, with 9 as the largest which usually refers to cities and 1 is referred to perfect dark sky site, which is usually near mountains or national parks where there is no human/ artificial light.  To be able to see stars and space, I need to be in a low level Bortle zone, which is not the case in Hanoi. </p>
                     <p>Even though I was not able to see the clear skies at night, Hanoi was able to make up for me by providing one of the most stunning sunsets I can ever ask for. I have been fortunate enough to take some pictures of Hanoi’s sunset during my time in my hometown. After studying abroad here in Michigan State University, I have had the opportunity to take part in numerous astronomy events here such as going to the planetarium to watch a sky simulation in the dome or going to the MSU observatory to observe space and extraterrestrial objects through the telescope. </p>
-                    <!-- Table -->
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Celestial Object</th>
-                                <th>Distance from Earth (light-years)</th>
-                                <th>Visibility in Northern Hemisphere</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Andromeda Galaxy</td>
-                                <td>2.537 million</td>
-                                <td>Year-round</td>
-                            </tr>
-                            <tr>
-                                <td>Betelgeuse</td>
-                                <td>642.5</td>
-                                <td>Winter</td>
-                            </tr>
-                            <tr>
-                                <td>Alpha Centauri</td>
-                                <td>4.367</td>
-                                <td>Summer</td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </div>
-            </div>
-        </article>
-        <!-- Newsletter Signup Form -->
-        <footer style="margin-top: 50px;">
-            <h2>Join my Newsletter</h2>
-            <form action="#" method="post">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <br><br>
-                <input type="submit" value="Subscribe">
-            </form>
-        </footer>
-    </main>
+            </article>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Bach Nguyen. All rights reserved.</p>
+    </footer>
 </body>
 </html>
